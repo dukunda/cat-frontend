@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Welcome Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans selection:bg-indigo-500">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent cursor-pointer">
+            SkillSwap.
+        </div>
+        
+        <div class="hidden md:flex space-x-8 text-slate-400 font-medium items-center">
+            <a href="marketplace.html" class="hover:text-white transition">Marketplace</a>
+            <a href="dashboard.html" class="hover:text-white transition underline decoration-indigo-500 underline-offset-4">Dashboard</a>
+            <a href="success.html" class="hover:text-white transition">Messages</a>
+        </div>
+
+        <div class="flex items-center space-x-6">
+            <a href="post-skill.html" class="hidden lg:block bg-indigo-600/10 border border-indigo-500/30 text-indigo-400 px-5 py-2 rounded-full font-semibold hover:bg-indigo-600 hover:text-white transition">
+                + Post a Skill
+            </a>
+            
+            <div class="flex items-center space-x-3 border-l border-slate-800 pl-6 cursor-pointer group">
+                <a href="dashboard.html" class="flex justify-center gap-2"><div class="text-right hidden sm:block">
+                    <p class="text-xs font-bold group-hover:text-indigo-400 transition">Iradukunda kevin</p>
+                    <p class="text-[10px] text-slate-500">24 Swaps Done</p>
+                </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold border border-slate-700 shadow-lg group-hover:scale-105 transition">
+                    IK
+                </div></a>
+                <a href="index.html">log out</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-8 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight">
+                    Your skills are <br/>
+                    <span class="text-indigo-400 italic">campus currency.</span>
+                </h1>
+                <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+                    Welcome back, Alex. You have <strong>3 new swap requests</strong> and your Python skill is trending. Ready to trade your knowledge for something new?
+                </p>
+                
+                <div class="flex space-x-4">
+                    <a href="dashboard.html" class="bg-white text-slate-950 px-8 py-4 rounded-2xl font-black hover:bg-indigo-400 hover:text-white transition shadow-xl">
+                        Go to Dashboard
+                    </a>
+                    <a href="marketplace.html" class="bg-slate-900 border border-slate-800 px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">
+                        Explore Skills
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-[2.5rem] relative">
+                <div class="absolute -top-6 -right-6 bg-emerald-500 text-slate-950 font-bold px-4 py-2 rounded-full text-xs shadow-lg animate-bounce">
+                    New Match!
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-indigo-500/20 rounded-lg flex items-center justify-center text-indigo-400">
+                                <i class="fas fa-code text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium">Teaching: Python</span>
+                        </div>
+                        <span class="text-xs text-slate-500">+12% reach</span>
+                    </div>
+                    <div class="flex items-center justify-between bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400">
+                                <i class="fas fa-language text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium">Learning: Spanish</span>
+                        </div>
+                        <span class="text-xs text-slate-500 italic">Session Tomorrow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>

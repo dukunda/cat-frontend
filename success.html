@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Detail | SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans overflow-x-hidden">
+
+    <div class="relative h-64 bg-gradient-to-r from-indigo-900 to-slate-900">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <nav class="relative z-10 p-6">
+            <a href="#" class="text-white/70 hover:text-white flex items-center space-x-2">
+                <i class="fas fa-arrow-left"></i> <span><a href="marketplace.html">Back to Marketplace</a></span>
+            </a>
+        </nav>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-20 relative z-10 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-8">
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-20 h-20 bg-indigo-500 rounded-3xl rotate-3 flex items-center justify-center text-3xl font-bold shadow-xl shadow-indigo-500/20">
+                                JD
+                            </div>
+                            <div>
+                                <h1 class="text-3xl font-black">Python Backend Expert</h1>
+                                <p class="text-indigo-400 font-medium">Jordan D. • Senior CS Student</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-amber-400 text-xl font-bold">★ 4.9</div>
+                            <div class="text-slate-500 text-xs uppercase tracking-widest">12 Swaps Done</div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-4">About this Swap</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        I've been coding in Python for 4 years and can help you with Django, Flask, or just basic data structures. I'm looking for someone who can help me polish my UI/UX design skills for my graduation project.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                            <span class="block text-xs text-slate-500 mb-1">Time Commitment</span>
+                            <span class="font-bold">2 Hours / Week</span>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                            <span class="block text-xs text-slate-500 mb-1">Preferred Platform</span>
+                            <span class="font-bold">Discord / Zoom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-indigo-600 p-8 rounded-3xl sticky top-8 shadow-2xl shadow-indigo-500/20">
+                    <h3 class="text-xl font-bold mb-2">Ready to trade?</h3>
+                    <p class="text-indigo-100 text-sm mb-6">Jordan is looking for <strong>UI/UX Design</strong>. Does that sound like you?</p>
+                    
+                    <button onclick="document.getElementById('success-modal').style.display='flex'" class="w-full bg-white text-indigo-600 py-4 rounded-2xl font-black text-lg hover:bg-slate-100 transition shadow-xl">
+                        Send Swap Request
+                    </button>
+                    
+                    <p class="text-center text-indigo-200 text-xs mt-4">
+                        <i class="fas fa-shield-alt mr-1"></i> No money will ever be requested.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="success-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-[100] hidden items-center justify-center p-6">
+        <div class="bg-slate-900 border border-indigo-500/30 p-10 rounded-[40px] max-w-sm w-full text-center relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-indigo-500/20 blur-3xl"></div>
+            
+            <div class="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/20">
+                <i class="fas fa-check text-3xl text-white"></i>
+            </div>
+            
+            <h2 class="text-2xl font-black mb-2">Request Sent!</h2>
+            <p class="text-slate-400 mb-8">We've pinged Jordan. You'll get a notification once they accept the swap.</p>
+            
+            <button onclick="document.getElementById('success-modal').style.display='none'" class="w-full bg-slate-800 py-4 rounded-2xl font-bold hover:bg-slate-700 transition">
+                Back to Marketplace
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

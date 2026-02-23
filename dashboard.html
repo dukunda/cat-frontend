@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans">
+
+    <div class="flex min-h-screen">
+        
+        <aside class="w-64 border-r border-slate-900 p-6 hidden md:block">
+            <div class="text-xl font-bold mb-10 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent"><a href="index2.html">
+                SkillSwap.</a>
+            </div>
+            <nav class="space-y-2">
+                <a href="#" class="flex items-center space-x-3 bg-indigo-500/10 text-indigo-400 p-3 rounded-xl">
+                    <i class="fas fa-th-large"></i> <span>Dashboard</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 p-3 rounded-xl transition">
+                    <i class="fas fa-exchange-alt"></i> <span>My Swaps</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 p-3 rounded-xl transition">
+                    <i class="fas fa-comment-dots"></i> <span>Messages</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 p-3 rounded-xl transition">
+                    <i class="fas fa-star"></i> <span>Reviews</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-8">
+            <header class="flex justify-between items-center mb-10">
+                <h1 class="text-2xl font-bold">Welcome back, Alex! 👋</h1>
+                <div class="flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="text-sm font-bold">Alex Rivera</p>
+                        <p class="text-xs text-slate-500">Pro Swapper</p>
+                    </div>
+                    <div class="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg shadow-indigo-500/20">
+                        AR
+                    </div>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl">
+                    <p class="text-slate-500 text-sm mb-1">Hours Swapped</p>
+                    <h3 class="text-3xl font-black">24.5</h3>
+                    <p class="text-emerald-400 text-xs mt-2">+3.2 this week</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl">
+                    <p class="text-slate-500 text-sm mb-1">Reputation Score</p>
+                    <h3 class="text-3xl font-black text-indigo-400">98%</h3>
+                    <p class="text-slate-500 text-xs mt-2">Top 5% of community</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl">
+                    <p class="text-slate-500 text-sm mb-1">Money Saved (Est.)</p>
+                    <h3 class="text-3xl font-black text-cyan-400">$480</h3>
+                    <p class="text-slate-500 text-xs mt-2">Based on tutor rates</p>
+                </div>
+            </div>
+
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden">
+                <div class="p-6 border-b border-slate-800 flex justify-between items-center">
+                    <h2 class="font-bold">Active Exchanges</h2>
+                    <button class="text-indigo-400 text-sm hover:underline">View All</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-slate-950/50 text-slate-500 text-xs uppercase">
+                            <tr>
+                                <th class="p-4">Partner</th>
+                                <th class="p-4">Trading</th>
+                                <th class="p-4">Status</th>
+                                <th class="p-4">Next Session</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800">
+                            <tr class="hover:bg-slate-800/30 transition">
+                                <td class="p-4 flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-purple-500 rounded-lg text-xs flex items-center justify-center font-bold">SM</div>
+                                    <span class="text-sm font-medium">Sarah Miller</span>
+                                </td>
+                                <td class="p-4 text-sm italic text-slate-400">ReactJS for Figma</td>
+                                <td class="p-4">
+                                    <span class="bg-amber-500/10 text-amber-500 text-[10px] px-2 py-1 rounded-full border border-amber-500/20">In Progress</span>
+                                </td>
+                                <td class="p-4 text-sm">Tomorrow, 4:00 PM</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/30 transition">
+                                <td class="p-4 flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-blue-500 rounded-lg text-xs flex items-center justify-center font-bold">KK</div>
+                                    <span class="text-sm font-medium">Kevin Kim</span>
+                                </td>
+                                <td class="p-4 text-sm italic text-slate-400">Guitar for Math</td>
+                                <td class="p-4">
+                                    <span class="bg-emerald-500/10 text-emerald-500 text-[10px] px-2 py-1 rounded-full border border-emerald-500/20">Confirmed</span>
+                                </td>
+                                <td class="p-4 text-sm">Sat, 11:00 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

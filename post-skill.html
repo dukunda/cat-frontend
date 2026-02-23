@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Swap | SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans">
+
+    <nav class="p-6">
+        <a href="#" class="text-slate-400 hover:text-white transition flex items-center space-x-2">
+            <i class="fas fa-arrow-left"></i>
+            <span><a href="marketplace.html">Back to Marketplace</a></span>
+        </a>
+    </nav>
+
+    <div class="max-w-2xl mx-auto px-6 py-10">
+        <div class="mb-10">
+            <h1 class="text-4xl font-extrabold mb-2">Create a New Swap</h1>
+            <p class="text-slate-400">Be specific about what you can teach to get better matches.</p>
+        </div>
+
+        <form class="space-y-8">
+            
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-xl">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center font-bold">1</div>
+                    <h2 class="text-xl font-bold">Your Expertise</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Skill Title</label>
+                        <input type="text" placeholder="e.g. Intro to React.js or Logo Design" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 outline-none focus:border-indigo-500 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Category</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 outline-none focus:border-indigo-500 transition">
+                            <option>Development</option>
+                            <option>Design</option>
+                            <option>Business</option>
+                            <option>Languages</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Experience Level</label>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button type="button" class="bg-slate-950 border border-indigo-500/50 text-indigo-400 py-2 rounded-lg text-sm">Beginner</button>
+                            <button type="button" class="bg-slate-950 border border-slate-800 py-2 rounded-lg text-sm hover:border-slate-600">Intermediate</button>
+                            <button type="button" class="bg-slate-950 border border-slate-800 py-2 rounded-lg text-sm hover:border-slate-600">Expert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-32 h-32 bg-emerald-500/10 blur-3xl"></div>
+
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center font-bold">2</div>
+                    <h2 class="text-xl font-bold">What you're looking for</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Desired Skill</label>
+                        <input type="text" placeholder="e.g. Someone to help me with French" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 outline-none focus:border-emerald-500 transition">
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 text-sm text-slate-500 bg-slate-950 p-4 rounded-xl border border-dashed border-slate-800">
+                        <i class="fas fa-info-circle text-emerald-500"></i>
+                        <p>We'll notify you automatically when a match is found!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-indigo-500/20 transition-all transform hover:-translate-y-1">
+                    Post My Swap
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

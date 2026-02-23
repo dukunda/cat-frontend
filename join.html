@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans min-h-screen flex items-center justify-center p-6">
+
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/10 blur-[120px] rounded-full"></div>
+    </div>
+
+    <div class="max-w-md w-full">
+        <div class="text-center mb-8">
+            <div class="text-3xl font-black bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent inline-block">
+                SkillSwap.
+            </div>
+            <p class="text-slate-500 mt-2">Join the student barter community</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-[2rem] shadow-2xl">
+            <div class="flex bg-slate-950 p-1 rounded-xl mb-8">
+                <button class="flex-1 py-2 rounded-lg text-sm font-bold bg-indigo-600 text-white transition">Sign Up</button>
+                <a href="login.html" class="flex-1 py-2 rounded-lg text-sm ml-10 font-bold text-slate-500 hover:text-white transition">Login</a>
+            </div>
+
+            <form class="space-y-5">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">University Email</label>
+                    <div class="relative">
+                        <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-600"></i>
+                        <input type="email" placeholder="student@uni.edu" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 pl-12 pr-4 outline-none focus:border-indigo-500 transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Password</label>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-slate-600"></i>
+                        <input type="password" placeholder="••••••••" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 pl-12 pr-4 outline-none focus:border-indigo-500 transition">
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-2 pb-2">
+                    <input type="checkbox" class="w-4 h-4 rounded border-slate-800 bg-slate-950 accent-indigo-500">
+                    <span class="text-xs text-slate-500">I agree to the <a href="#" class="text-indigo-400 underline">Swap Terms</a></span>
+                </div>
+
+                <a href="index2.html" class="flex justify-center items-center w-full bg-white text-slate-950 py-4 rounded-xl font-black hover:bg-indigo-400 hover:text-white transition shadow-lg shadow-white/5">
+                    Create Account
+                </a>
+            </form>
+
+            <div class="mt-8 pt-6 border-t border-slate-800">
+                <p class="text-center text-xs text-slate-500 mb-4">Or continue with</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="flex items-center justify-center space-x-2 bg-slate-950 border border-slate-800 py-3 rounded-xl hover:bg-slate-800 transition">
+                        <i class="fab fa-google text-sm"></i> <span class="text-sm font-bold">Google</span>
+                    </button>
+                    <button class="flex items-center justify-center space-x-2 bg-slate-950 border border-slate-800 py-3 rounded-xl hover:bg-slate-800 transition">
+                        <i class="fab fa-apple text-sm"></i> <span class="text-sm font-bold">Apple</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

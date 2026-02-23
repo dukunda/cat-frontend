@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white font-sans min-h-screen flex items-center justify-center p-6">
+
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 text-indigo-500/5">
+        <i class="fas fa-code absolute top-20 left-20 text-9xl rotate-12"></i>
+        <i class="fas fa-palette absolute bottom-20 right-20 text-9xl -rotate-12"></i>
+    </div>
+
+    <div class="max-w-md w-full">
+        <div class="text-center mb-8">
+            <div class="text-3xl font-black bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent inline-block">
+                SkillSwap.
+            </div>
+            <p class="text-slate-500 mt-2">Welcome back! Ready to trade?</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-[2rem] shadow-2xl relative overflow-hidden">
+            
+            <div class="flex bg-slate-950 p-1 rounded-xl mb-8 border border-slate-800">
+                <button class="flex-1 py-2 rounded-lg text-sm font-bold text-slate-500 hover:text-white transition">Sign Up</button>
+                <button class="flex-1 py-2 rounded-lg text-sm font-bold bg-indigo-600 text-white shadow-lg">Login</button>
+            </div>
+
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Email Address</label>
+                    <div class="relative group">
+                        <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 group-focus-within:text-indigo-400 transition"></i>
+                        <input type="email" placeholder="alex@university.edu" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl py-4 pl-12 pr-4 outline-none focus:border-indigo-500 transition">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest">Password</label>
+                        <a href="#" class="text-[10px] text-indigo-400 hover:underline">Forgot?</a>
+                    </div>
+                    <div class="relative group">
+                        <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 group-focus-within:text-indigo-400 transition"></i>
+                        <input type="password" placeholder="••••••••" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-xl py-4 pl-12 pr-4 outline-none focus:border-indigo-500 transition">
+                    </div>
+                </div>
+
+                <a href="index2.html" class="flex justify-center items-center w-full bg-indigo-600 text-white py-4 rounded-xl font-black hover:bg-indigo-500 transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-indigo-500/20">
+                    Sign In
+                </a>
