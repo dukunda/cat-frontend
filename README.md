@@ -1,4 +1,4 @@
-# 🔄 SkillSwap | The Campus Barter Marketplace
+#  SkillSwap | The Campus Barter Marketplace
 
 **"Stop paying for tutors. Start trading your skills."**
 
@@ -6,18 +6,18 @@ SkillSwap is a unique, problem-solving web platform designed for students to exc
 
 ---
 
-## 📸 Preview
+##  Preview
 ![SkillSwap Landing Page](landing.png)
 *Figure 1: The dynamic landing page featuring the "Logged In" state.*
 
 ---
 
-## 🚀 The Problem & Solution
+##  The Problem & Solution
 
 - **The Problem:** Private tutoring and skill-building courses are expensive. Most students have valuable talents (coding, languages, design) but no marketplace to trade them for other skills they need.
 - **The Solution:** A specialized barter economy platform that matches students based on mutual needs. If you teach me Python, I’ll teach you Spanish.
 
-## ✨ Key Features
+##  Key Features
 
 * **Skill Matching Algorithm:** Connects users based on "Gives" and "Wants."
 * **Reputation System:** Trust-based trading with student-to-student reviews.
@@ -25,14 +25,14 @@ SkillSwap is a unique, problem-solving web platform designed for students to exc
 * **Zero-Cost Economy:** A platform built specifically to remove financial barriers from learning.
 * **Figma-Ready Design:** Clean, modern "Dark Mode" UI built for high-speed prototyping.
 
-## 🛠️ Built With
+##  Built With
 
 * **HTML5** - Semantic structure.
 * **Tailwind CSS** - Modern, responsive styling.
 * **FontAwesome** - Professional iconography.
 * **Figma** - UI/UX Architecture.
 
-## 📂 Project Structure (The 5-Page Logic)
+##  Project Structure (The 5-Page Logic)
 
 1.  **Landing Page:** The high-conversion pitch and "Explore" entry point.
 2.  **Auth Page:** Secure Login/Signup portal for verified student emails.
