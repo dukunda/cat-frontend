@@ -41,8 +41,7 @@ SkillSwap is a unique, problem-solving web platform designed for students to exc
 5.  **Post Swap:** A streamlined form for listing new expertise.
 
 ---
-
-## ydiasniyonshuti@yahoo.fr
+##Author
 **IRADUKUNDA Kevin** *  25RP00541*
 **RP TUMBA COLLEGE**
 
